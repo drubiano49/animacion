@@ -1,0 +1,68 @@
+<!Doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animacion</title>
+
+<style>
+    h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 45px;
+  color: orangered;
+  
+  }
+
+  p {
+    animation-name: fadeInOut, moveLeft300px, bounce;
+animation-duration: 2.5s, 5s, 1s;
+animation-iteration-count: 2, 1, 5;
+  color: white;
+}
+
+
+    .hombre{
+        height: 295px;
+        width: 160px;
+        background: url("hombre.png");
+        margin: 0 auto;
+        /* background-position: -486px 0; */
+        animation: correr 1s steps(4) infinite;
+        margin-top: 200px;
+        margin-left: 314px;
+        margin-bottom: auto;
+    }
+
+    body {
+    height: auto ;
+    background-image: url("fondo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+    @keyframes  correr{
+        0%{
+            background-position: 0px;
+        }
+        100%{
+            background-position: -967px;
+        }
+    }
+
+    @keyframes animarfondo{
+        0%{
+            background-position: 3px;
+        }
+    }
+</style>
+
+</head>
+<body>
+    <MARQUEE BGCOLOR="#FF7070"> LUCHA LIBRE DIRIGIFA POR DANIEL RUBIANO </MARQUEE>
+    <center>
+<h2>Lucha Libre</h2>
+</center>
+    <div class="Fondo"></div>
+        <div class="hombre"></div>
+</body>
+</html>
